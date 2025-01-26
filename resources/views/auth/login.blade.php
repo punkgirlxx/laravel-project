@@ -6,7 +6,7 @@
    login
    used to login to the dashboard, will show errors
 --}}
-<body
+<body>
 
   <form action= "{{route('login')}}" method="POST">
     @csrf
