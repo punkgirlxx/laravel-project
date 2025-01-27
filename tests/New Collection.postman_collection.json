@@ -1,0 +1,222 @@
+{
+	"info": {
+		"_postman_id": "10042f4e-2f65-40c5-9a7d-2f16f2730f53",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41554783"
+	},
+	"item": [
+		{
+			"name": "http://demo.test/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}login",
+					"host": [
+						"{{base_url}}login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://demo.test/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}register",
+					"host": [
+						"{{base_url}}register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://demo.test/dashboard",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://demo.test/dashboard",
+					"protocol": "http",
+					"host": [
+						"demo",
+						"test"
+					],
+					"path": [
+						"dashboard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://demo.test/dashboard/create",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}dashboard/create",
+					"host": [
+						"{{base_url}}dashboard"
+					],
+					"path": [
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://demo.test/dashboard/1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}dashboard/1",
+					"host": [
+						"{{base_url}}dashboard"
+					],
+					"path": [
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://demo.test/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Test User\",\r\n    \"email\": \"test@example.com\",\r\n    \"password\": \"password\",\r\n    \"password_confirmation\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}register",
+					"host": [
+						"{{base_url}}register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://demo.test/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"user@example.com\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/login",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://demo.test/dashboard",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "in",
+							"value": "query",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}dashboard",
+					"host": [
+						"{{base_url}}dashboard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://demo.test/dashboard/1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}dashboard/1",
+					"host": [
+						"{{base_url}}dashboard"
+					],
+					"path": [
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://demo.test/logout",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}logout",
+					"host": [
+						"{{base_url}}logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
